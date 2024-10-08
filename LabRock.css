@@ -22,7 +22,7 @@
   
   .top-wrapper {
     padding: 180px 0 100px 0;
-    background-image: url(https://www.google.com/imgres?q=%E3%82%8D%E3%81%A3%E3%81%8F&imgurl=https%3A%2F%2Frocketnews24.com%2Fwp-content%2Fuploads%2Fsites%2F2%2F2023%2F02%2Flespaul.jpg%3Fcrop%3D0px%252C50px%252C1300px%252C683px%26resize%3D1200%252C630&imgrefurl=https%3A%2F%2Frocketnews24.com%2F2023%2F02%2F14%2F1764698%2F&docid=4RyAX8G_BAql9M&tbnid=08kxPFhD6MNTdM&vet=12ahUKEwj8253rmf6IAxW0sFYBHeNuLWUQM3oECDYQAA..i&w=1200&h=630&hcb=2&ved=2ahUKEwj8253rmf6IAxW0sFYBHeNuLWUQM3oECDYQAA);
+    background-image: url(/background.jpg);
     background-size: cover;
     color: white;
     text-align: center;
