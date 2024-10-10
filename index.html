@@ -21,6 +21,7 @@
         </div>
       </div>
     </header>
+    
     <div class="top-wrapper">
       <div class="container">
         <h1>さあ、私たちと一緒に</h1>
@@ -35,13 +36,19 @@
         </div>
       </div>
     </div>
-    <div class="introduction" id="intro">
-      <h1>サークル紹介</h1>
-      <h2><活動内容></h2>
-      <h4>LabRockは、交流関係を広げたいけれど研究室外の人となかなか繋がれない院生向けに、音楽を通して交流の場を提供することを目的としたサークルです。</h4>
-      <h4>3月・8月・12月に各バンドが演奏し合うライブイベント LRF(LabRockFestival)が開催されます。各々が日々練習した成果を見せ合うとともに、ライブ後に懇親会もあるため交友関係を深められます！</h4>
-      <h4>LRF以外の活動は各々自由に行ってもらうため、研究が忙しく時間が多く取れない院生にとっても参加しやすいと思います。</h4>
-      <h4>もちろん、これらの活動は何一つ強制ではなく、楽器は弾けないけどLRFに参加したい、学部生だけど興味あるという方も歓迎します！気軽に連絡ください！</h4>
+
+    <!-- サークル紹介部分 -->
+    <div class="introduction-wrapper">
+      <div class="introduction" id="intro">
+        <h1>サークル紹介</h1>
+        <h2><活動内容></h2>
+        <h4>LabRockは、交流関係を広げたいけれど研究室外の人となかなか繋がれない院生向けに、音楽を通して交流の場を提供することを目的としたサークルです。</h4>
+        <h4>3月・8月・12月に各バンドが演奏し合うライブイベント LRF(LabRockFestival)が開催されます。各々が日々練習した成果を見せ合うとともに、ライブ後に懇親会もあるため交友関係を深められます！</h4>
+        <h4>LRF以外の活動は各々自由に行ってもらうため、研究が忙しく時間が多く取れない院生にとっても参加しやすいと思います。</h4>
+        <h4>もちろん、これらの活動は何一つ強制ではなく、楽器は弾けないけどLRFに参加したい、学部生だけど興味あるという方も歓迎します！気軽に連絡ください！</h4>
+      </div>
+    </div>
+
     <div class="message-wrapper">
       <div class="container">
         <div class="heading">
@@ -51,6 +58,7 @@
         <a href="https://forms.gle/2mDwcekye9A12VvYA" class="btn message">今すぐ出会いに行く</a>
       </div>
     </div>
+    
     <footer>
       <div class="container">
         <h1 class="logoa">院生向けバンドサークル LabRock</h1>
@@ -58,7 +66,7 @@
       </div>
     </footer>
 
-    <!-- JavaScript for mobile menu -->
+    <!-- JavaScript for mobile menu and scroll animation -->
     <script>
       document.addEventListener("DOMContentLoaded", function() {
         const menuIcon = document.querySelector('.menu-icon');
@@ -66,6 +74,16 @@
 
         menuIcon.addEventListener('click', function() {
           headerRight.classList.toggle('active');
+        });
+
+        const introSection = document.querySelector('.introduction');
+        window.addEventListener('scroll', function() {
+          const introPosition = introSection.getBoundingClientRect().top;
+          const screenPosition = window.innerHeight / 1.3;
+
+          if (introPosition < screenPosition) {
+            introSection.classList.add('show');
+          }
         });
       });
     </script>
