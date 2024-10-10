@@ -122,73 +122,25 @@ header {
   display: none;
 }
 
-.lesson-wrapper {
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #f7f7f7;
-  text-align: center;
-}
-
-.heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
-  color: #5f5d60;
-}
-
-.heading h2 {
-  font-weight: normal;
-}
-
-.lesson {
-  float: left;
-  width: 25%;
-}
-
-.lesson-icon {
+.introduction-wrapper {
   position: relative;
-  width: 300px;
-}
-
-.lesson-icon img {
-  position: relative;
-  width: 300px;
-  height: 250px;
-}
-
-.lesson-icon p {
-  position: absolute;
-  top: 44%;
-  width: 100%;
-  color: white;
-}
-
-.text-contents {
-  width: 80%;
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 13px;
-  color: #b3aeb5;
-}
-
-.heading h3 {
-  font-weight: normal;
-}
-
-.logoa {
-  color: #000000;
+  overflow: hidden;
 }
 
 .introduction {
-  text-align: center;
-  padding: 100px 0px;
-  color: grey;
+  background-color: #001f3f; /* 紺色 */
+  padding: 20px;
+  border-radius: 25px;
+  color: white;
+  max-width: 80%;
+  margin: 0 auto;
+  position: relative;
+  left: -100%; /* スライドアウトした状態から開始 */
+  transition: left 0.5s ease-in-out;
 }
 
-.quote {
-  padding: 50px;
-  background: #b3aeb5;
-  background-size: cover;
+.introduction.show {
+  left: 0; /* スライドインする位置 */
 }
 
 .message-wrapper {
@@ -242,18 +194,10 @@ footer {
   .heading h2 {
     font-size: 20px;
   }
-
-  .quote {
-    display: none;
-  }
 }
 
 /* スマホ向けレイアウト */
 @media all and (max-width: 670px) {
-  .lesson {
-    width: 100%;
-  }
-
   .btn {
     width: 100%;
   }
@@ -261,7 +205,7 @@ footer {
   .LINE {
     margin-bottom: 10px;
   }
-
+  
   .top-wrapper {
     text-align: left;
   }
@@ -280,10 +224,6 @@ footer {
 
   .top-wrapper p {
     font-size: 14px;
-  }
-
-  .quote {
-    display: none;
   }
 }
 
