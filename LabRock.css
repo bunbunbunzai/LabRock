@@ -6,6 +6,7 @@ body {
   margin: 0;
   font-family: "Hiragino Kaku Gothic ProN", sans-serif;
 }
+
 a {
   text-decoration: none;
 }
@@ -81,14 +82,14 @@ header {
   height: 65px;
   width: 100%;
   background-color: rgba(34, 49, 52, 0.9);
-  position :fixed;
+  position: fixed;
   top: 0;
   z-index: 10;
 }
 
 .logo {
   margin-top: 10px;
-  color:white;
+  color: white;
 }
 
 .header-left {
@@ -113,7 +114,7 @@ header {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.menu-icon{
+.menu-icon {
   color: white;
   float: right;
   font-size: 25px;
@@ -146,13 +147,13 @@ header {
 
 .lesson-icon {
   position: relative;
-  width:300px;
+  width: 300px;
 }
 
-.lesson-icon img{
+.lesson-icon img {
   position: relative;
-  width:300px;
-  height:250px;
+  width: 300px;
+  height: 250px;
 }
 
 .lesson-icon p {
@@ -174,22 +175,20 @@ header {
   font-weight: normal;
 }
 
-.logoa{
+.logoa {
   color: #000000;
 }
 
 .introduction {
-text-align: center;
-padding:100px 0px;
-color:grey;
+  text-align: center;
+  padding: 100px 0px;
+  color: grey;
 }
 
-
-.quote{
-padding:50px;
-background:#b3aeb5;
-background-size:cover;
-
+.quote {
+  padding: 50px;
+  background: #b3aeb5;
+  background-size: cover;
 }
 
 .message-wrapper {
@@ -244,8 +243,8 @@ footer {
     font-size: 20px;
   }
 
-  .quote{
-    display:none;
+  .quote {
+    display: none;
   }
 }
 
@@ -262,19 +261,19 @@ footer {
   .LINE {
     margin-bottom: 10px;
   }
-  
+
   .top-wrapper {
     text-align: left;
   }
-  
+
   .header-right {
-      display: none;
-    }
-  
-    .menu-icon {
-      display: block;
-    }
-  
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
   .top-wrapper h1 {
     font-size: 24px;
   }
@@ -282,7 +281,23 @@ footer {
   .top-wrapper p {
     font-size: 14px;
   }
-  .quote{
-    display:none;
+
+  .quote {
+    display: none;
   }
+}
+
+.header-right.active {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 65px;
+  background-color: rgba(34, 49, 52, 0.9);
+  width: 100%;
+  text-align: right;
+}
+
+.header-right.active a {
+  display: block;
+  padding: 10px 20px;
 }
