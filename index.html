@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>院生向けバンドサークル　LabRock</title>
+    <title>院生向けバンドサークル LabRock</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="LabRock.css">
   </head>
@@ -11,7 +11,7 @@
     <header>
       <div class="container">
         <div class="header-left">
-          <h1 class="logo">院生向けバンドサークル　LabRock</h1>
+          <h1 class="logo">院生向けバンドサークル LabRock</h1>
         </div>
         <a href="#" class="menu-icon"><span class="fa fa-bars"></span></a>
         <div class="header-right">
@@ -53,9 +53,21 @@
     </div>
     <footer>
       <div class="container">
-        <h1 class="logoa">院生向けバンドサークル　LabRock</h1>
+        <h1 class="logoa">院生向けバンドサークル LabRock</h1>
         <p>Now, why don't you come and meet new friends at LabRock?</p>
       </div>
     </footer>
+
+    <!-- JavaScript for mobile menu -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const menuIcon = document.querySelector('.menu-icon');
+        const headerRight = document.querySelector('.header-right');
+
+        menuIcon.addEventListener('click', function() {
+          headerRight.classList.toggle('active');
+        });
+      });
+    </script>
   </body>
 </html>
